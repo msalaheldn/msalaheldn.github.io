@@ -206,3 +206,23 @@
     crossorigin="anonymous"
   >
 {% endif %}
+
+
+<style>
+  /* Force the entire website to scale up by 150% */
+  html {
+    /* For Chrome, Edge, and Safari */
+    zoom: 1.5; 
+
+    /* For Firefox (which doesn't support 'zoom') */
+    -moz-transform: scale(1.5);
+    -moz-transform-origin: top center;
+  }
+  
+  /* Optional: Fix the sidebar if it gets cut off */
+  @media (min-width: 800px) {
+    body {
+        overflow-x: hidden; /* Prevents horizontal scrollbar */
+    }
+  }
+</style>
