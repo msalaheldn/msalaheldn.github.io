@@ -10,117 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #fcfcfd;
-    --ink: #1b2130;
-    --muted: #5e6577;
-    --rule: #e2e5eb;
-    --accent: #2d4a86;
-    --measure: 40rem;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #12151c;
-      --ink: #e4e7ee;
-      --muted: #9aa1b2;
-      --rule: #2a2f3a;
-      --accent: #a3b6e6;
-    }
-  }
-
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: "Spectral", Georgia, "Times New Roman", serif;
-    font-size: 1.125rem;
-    line-height: 1.65;
-    font-feature-settings: "kern", "liga", "onum";
-  }
-  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
-  a:hover { text-decoration-thickness: 2px; }
-  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
-
-  .page {
-    max-width: var(--measure);
-    margin: 0 auto;
-    padding: 4.5rem 1.25rem 4rem;
-  }
-  @media (min-width: 64rem) {
-    .page { margin-left: max(1.25rem, calc(50vw - 30rem)); }
-  }
-
-  /* header */
-  header { display: grid; grid-template-columns: auto 1fr; gap: 1.25rem; align-items: center; }
-  .knot { width: 4.25rem; height: 4.25rem; color: var(--accent); }
-  .knot path { fill: none; stroke: currentColor; stroke-width: 5.5; stroke-linecap: round; stroke-linejoin: round; }
-  h1 {
-    margin: 0;
-    font-weight: 500;
-    font-size: clamp(2rem, 5vw, 2.6rem);
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-  }
-  .role { margin: 0.35rem 0 0; color: var(--muted); font-style: italic; }
-
-  nav { margin: 2.25rem 0 0; padding-bottom: 1.1rem; border-bottom: 1px solid var(--rule); }
-  nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.35rem 1.4rem; font-size: 1rem; }
-  nav a { color: var(--ink); text-decoration: none; }
-  nav a:hover { color: var(--accent); text-decoration: underline; }
-
-  /* sections */
-  section { margin-top: 3rem; }
-  h2 {
-    margin: 0 0 1rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-    font-style: italic;
-    color: var(--ink);
-  }
-  p { margin: 0 0 1rem; }
-
-  /* dated entries */
-  .entries { list-style: none; margin: 0; padding: 0; }
-  .entries li {
-    display: grid;
-    grid-template-columns: 7.25rem 1fr;
-    gap: 0 1rem;
-    padding: 0.55rem 0;
-  }
-  .when { color: var(--muted); font-size: 0.95rem; font-variant-numeric: oldstyle-nums tabular-nums; padding-top: 0.12rem; }
-  .what { margin: 0; }
-  .title { display: block; font-weight: 500; }
-  .meta { display: block; color: var(--muted); font-size: 0.98rem; }
-  .what em { font-style: italic; }
-
-  .compact li { padding: 0.25rem 0; }
-
-  @media (max-width: 34rem) {
-    .page { padding-top: 3rem; }
-    header { grid-template-columns: 1fr; gap: 0.9rem; }
-    .knot { width: 3.25rem; height: 3.25rem; }
-    .entries li { grid-template-columns: 1fr; }
-    .when { padding-top: 0; }
-  }
-
-  footer {
-    margin-top: 4rem;
-    padding-top: 1.1rem;
-    border-top: 1px solid var(--rule);
-    color: var(--muted);
-    font-size: 0.95rem;
-  }
-
-  @media print {
-    nav, .knot { display: none; }
-    body { font-size: 11pt; }
-    .page { padding: 0; }
-    a { color: inherit; }
-  }
-</style>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <div class="page">
@@ -141,6 +31,7 @@
       <li><a href="#talks">Talks</a></li>
       <li><a href="#writing">Theses</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
       <li><a href="#schools">Schools</a></li>
       <li><a href="assets/Salaheldeen_CV.pdf">CV</a></li>
       <li><a href="mailto:mohamed-salaheldeen.mohamed@ube.fr">Email</a></li>
@@ -153,7 +44,7 @@
       <h2 id="about-h">About</h2>
       <p>I am a mathematician interested in the algebraic structures behind low-dimensional topology: fusion and modular tensor categories, topological quantum field theories and the quantum invariants of 3-manifolds, quantum groups, and factorization homology.</p>
       <p>I am a doctoral researcher at the <a href="https://imb.u-bourgogne.fr/">Institut de Mathématiques de Bourgogne</a> in Dijon, working with Peter Schauenburg on orthogonality for group-theoretical fusion categories. Before that I completed the M2 in mathematical physics in Dijon, with a thesis on factorization homology supervised by Lukas Woike, and the postgraduate diploma in high energy physics at ICTP in Trieste.</p>
-      <p>At IMB I organize the working group on stable homotopy theory and higher algebra.</p>
+      <p>Beyond my research I study BPS line defects and supersymmetric field theories, algebraic geometry, and homotopy theory. At IMB I organize the working group on stable homotopy theory and higher algebra.</p>
     </section>
 
     <section id="talks" aria-labelledby="talks-h">
@@ -264,6 +155,7 @@
           </p>
         </li>
       </ul>
+      <p><a href="teaching.html">Course notes and exercise sheets</a></p>
     </section>
 
     <section id="schools" aria-labelledby="schools-h">

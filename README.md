@@ -2,7 +2,9 @@
 
 Personal academic website of Mohamed Salaheldeen. A single static page, with no build step.
 
-- `index.html`: the whole site (content and styles)
+- `index.html`: the home page
+- `teaching.html`: course notes and exercise sheets (PDFs go in `assets/teaching/<course>/`)
+- `assets/style.css`: shared styles
 - `assets/Salaheldeen_CV.pdf`: the CV linked from the page
 - `assets/knot.svg`: the trefoil favicon
 - `.nojekyll`: tells GitHub Pages to serve the files as they are
