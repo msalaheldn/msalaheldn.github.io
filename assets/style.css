@@ -114,11 +114,14 @@ ul.topics li::marker { color: var(--accent); }
   background: var(--panel);
   border-radius: 6px;
 }
-.torus { display: block; width: 100%; max-width: 27rem; height: auto; margin: 0 auto; }
-.torus .surf { fill: none; stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; }
-.torus .line { fill: none; stroke: var(--accent); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
-.torus .line.hid { stroke-width: 1.6; stroke-dasharray: 4 4; opacity: 0.6; }
-.torus .lbl { fill: var(--accent); font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", math, serif; font-size: 21px; }
+.pants { display: block; width: 100%; max-width: 24rem; height: auto; margin: 0 auto; }
+.pants .surf { fill: none; stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; }
+.pants .surf.hid { stroke: var(--muted); stroke-width: 1.2; stroke-dasharray: 4 4; }
+.pants .line { fill: none; stroke: var(--accent); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.pants text { font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", math, serif; }
+.pants .lbl { fill: var(--accent); font-size: 21px; }
+.pants .state { fill: var(--muted); font-size: 19px; }
+.pants .state .sub { font-size: 13px; fill: var(--accent); }
 .diagram figcaption { margin-top: 1.2rem; font-size: 0.95rem; line-height: 1.5; color: var(--muted); text-align: center; }
 math { font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", math; }
 
