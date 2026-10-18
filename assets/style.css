@@ -114,13 +114,11 @@ ul.topics li::marker { color: var(--accent); }
   background: var(--panel);
   border-radius: 6px;
 }
-.defect { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; justify-items: center; }
-.defect svg { width: 100%; max-width: 220px; height: auto; display: block; }
-.defect .loop { fill: none; stroke: var(--accent); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
-.defect .pt { fill: var(--ink); }
-.defect .lbl { fill: var(--ink); font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", math, serif; font-size: 19px; }
-.defect .line { fill: var(--accent); }
-.defect .eq { font-size: 2rem; color: var(--muted); padding: 0 0.5rem; }
+.torus { display: block; width: 100%; max-width: 27rem; height: auto; margin: 0 auto; }
+.torus .surf { fill: none; stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; }
+.torus .line { fill: none; stroke: var(--accent); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.torus .line.hid { stroke-width: 1.6; stroke-dasharray: 4 4; opacity: 0.6; }
+.torus .lbl { fill: var(--accent); font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", math, serif; font-size: 21px; }
 .diagram figcaption { margin-top: 1.2rem; font-size: 0.95rem; line-height: 1.5; color: var(--muted); text-align: center; }
 math { font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", math; }
 
