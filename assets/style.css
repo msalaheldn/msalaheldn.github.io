@@ -109,10 +109,9 @@ ul.topics li::marker { color: var(--accent); }
 
 /* ---------- the signature diagram ---------- */
 .diagram {
-  margin: 2.5rem 0 2.25rem;
-  padding: 1.6rem 1.25rem 1.5rem;
-  background: var(--panel);
-  border-radius: 6px;
+  margin: 2.25rem 0 2rem;
+  padding: 0;
+  background: none;
 }
 .pants { display: block; width: 100%; max-width: 24rem; height: auto; margin: 0 auto; }
 .pants .surf { fill: none; stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; }
