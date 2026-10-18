@@ -11,7 +11,7 @@ Personal academic website of Mohamed Salaheldeen. Plain static HTML with no buil
 | `interests.html` | Other interests |
 | `assets/style.css` | Shared styles |
 | `assets/Salaheldeen_CV.pdf` | CV, linked in the menu |
-| `assets/knot.svg` | Trefoil favicon |
+| `assets/favicon.svg`, `favicon-32.png`, `apple-touch-icon.png` | Browser-tab and home-screen icons (the name medallion) |
 
 ## Editing
 
