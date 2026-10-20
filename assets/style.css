@@ -178,18 +178,5 @@ footer { margin-top: 4.5rem; padding-top: 1rem; border-top: 1px solid var(--rule
 
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-
-/* home intro with line-drawn portrait */
-.intro { display: grid; grid-template-columns: minmax(0, 1fr) 10.5rem; gap: 2.25rem; align-items: start; margin-top: 2.5rem; }
-.intro-text p:last-child { margin-bottom: 0; }
-.portrait {
-  display: block; width: 100%; aspect-ratio: 645 / 855; margin-top: 0.3rem;
-  background-color: var(--ink);
-  -webkit-mask: url("portrait.png") center / contain no-repeat;
-          mask: url("portrait.png") center / contain no-repeat;
-}
-@media (max-width: 52rem) {
-  .intro { grid-template-columns: 1fr; gap: 1.25rem; margin-top: 0.5rem; }
-  .portrait { order: -1; width: 9rem; margin: 0 auto; }
-}
-@media print { .portrait { display: none; } }
+.intro { margin-top: 2.5rem; }
+@media (max-width: 52rem) { .intro { margin-top: 0.5rem; } }

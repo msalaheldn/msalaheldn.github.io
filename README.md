@@ -13,7 +13,6 @@ Personal academic website of Mohamed Salaheldeen. Plain static HTML with no buil
 | `assets/Salaheldeen_CV.pdf` | CV, linked in the menu |
 | `assets/theses/` | Thesis PDFs, linked from the Research page |
 | `assets/talks/` | Talk notes, linked from the Talks page |
-| `assets/portrait.png` | Line-drawn portrait on the home page (transparent; coloured by CSS) |
 | `assets/gallery/` | Hiking photos (full size and `-thumb` versions) for the Other interests page |
 | `assets/favicon.svg`, `favicon-32.png`, `apple-touch-icon.png` | Browser-tab and home-screen icons (the name medallion) |
 
